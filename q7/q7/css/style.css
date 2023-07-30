@@ -1,1 +1,29 @@
 @charset "UTF-8";
+.blowing--box{
+  width:500px;
+  font-size:16px;
+  line-height:16px;
+  background:#fad296;
+  border:solid 5px #8f5a0a;
+  padding:20px;
+  border-radius:30px;
+  margin:0 auto;
+  position:relative;
+}
+
+.blowing--box:before,.blowing--box:after{
+  position:absolute;
+  content:"";
+  border:20px solid transparent;
+  left:30px;
+}
+
+.blowing--box::before{
+  border-top:20px solid #8f5a0a;
+  bottom:-45px;
+}
+
+.blowing--box::after{
+  border-top:20px solid #fad296;
+  bottom:-38px;
+}
